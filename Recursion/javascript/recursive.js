@@ -1,10 +1,11 @@
-
 /* Recursive Function- Replace var child = data.(what you want to go through in the data tree) */
 const printAliasesRecursive = (data) => {
 	var child = data.aliases;
+	/* Base case */
 	if(child.length === 0) { 
 		return;
 	}
+		/* Changing case */
 	child.forEach(child => {
 		console.log(child);
 	})
