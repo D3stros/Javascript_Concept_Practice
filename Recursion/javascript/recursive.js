@@ -1,5 +1,5 @@
 /* Recursive Function- Replace var child = data.(what you want to go through in the data tree) */
-const printAliasesRecursive = (data) => {
+const printChildrenRecursive = (data) => {
 	/* Base case */
 	if(data.children.length === 0) { 
 		return;
@@ -7,7 +7,7 @@ const printAliasesRecursive = (data) => {
 		/* Changing case */
 	data.children.forEach(child => {
 		console.log(child.name);
-		printAliasesRecursive(child);
+		printChildrenRecursive(child);
 	})
 }
 
